@@ -30,7 +30,8 @@ Python 3.12 및 CUDA를 지원하는 GPU 환경이 필요합니다 (RTX 4080 이
 
 ```bash
 # 1. 리포지토리 복제
-git clone [https://github.com/your-username/text-to-music-project.git](https://github.com/your-username/text-to-music-project.git)
+git clone https://github.com/your-username/text-to-music-project.git
+cd text-to-music-project](https://github.com/TRANDUYDAT21101233/Text_to_Music_Gen.git)
 
 # 2. 주요 의존성 라이브러리 설치
 pip install -r requirements.txt
