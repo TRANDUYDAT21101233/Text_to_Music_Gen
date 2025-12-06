@@ -1,0 +1,47 @@
+{
+    "format": "wav",
+    "lora_name_or_path": "none",
+    "lora_weight": 1.0,
+    "task": "text2music",
+    "prompt": "acoustic ballad, soft guitar, calm, intimate, gentle vocals style, warm, romantic, 80 bpm",
+    "lyrics": "[verse 1]\n창가에 비 내리던 밤\n너 없는 방은 너무 조용해\n웃으며 떠났던 그 날이\n아직도 내 맘을 아프게 해\n\n[pre-chorus]\n지울수록 더 선명해지는\n우리의 마지막 장면\n\n[chorus]\n돌아올 수 있다면 한 번만\n이 마음 다해 널 안을게\n흩어진 약속들 속에서도\n나는 여전히 너를 기다려\n끝나지 않은 이야기처럼\n우리 사랑 남아 있다면\n말해줘, 마지막이 아니라\n다시 시작이라고\n\n",
+    "audio_duration": 60,
+    "infer_step": 60,
+    "guidance_scale": 15.0,
+    "scheduler_type": "euler",
+    "cfg_type": "apg",
+    "omega_scale": 20.0,
+    "guidance_interval": 0.5,
+    "guidance_interval_decay": 0.0,
+    "min_guidance_scale": 3.0,
+    "use_erg_tag": false,
+    "use_erg_lyric": false,
+    "use_erg_diffusion": false,
+    "oss_steps": [],
+    "timecosts": {
+        "preprocess": 27.702749490737915,
+        "diffusion": 10618.27382016182,
+        "latent2audio": 337.20965099334717
+    },
+    "actual_seeds": [
+        646363261
+    ],
+    "retake_seeds": [
+        4027061966
+    ],
+    "retake_variance": 0.5,
+    "guidance_scale_text": 0.0,
+    "guidance_scale_lyric": 0.0,
+    "repaint_start": 0,
+    "repaint_end": 0,
+    "edit_n_min": 0.0,
+    "edit_n_max": 1.0,
+    "edit_n_avg": 1,
+    "src_audio_path": null,
+    "edit_target_prompt": null,
+    "edit_target_lyrics": null,
+    "audio2audio_enable": false,
+    "ref_audio_strength": 0.5,
+    "ref_audio_input": null,
+    "audio_path": "./outputs/output_20251205024257_0.wav"
+}
