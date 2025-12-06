@@ -30,8 +30,7 @@ Python 3.12 및 CUDA를 지원하는 GPU 환경이 필요합니다 (RTX 4080 이
 
 ```bash
 # 1. 리포지토리 복제
-git clone https://github.com/your-username/text-to-music-project.git
-cd text-to-music-project](https://github.com/TRANDUYDAT21101233/Text_to_Music_Gen.git)
+https://github.com/TRANDUYDAT21101233/Text_to_Music_Gen.git
 
 # 2. 주요 의존성 라이브러리 설치
 pip install -r requirements.txt
@@ -41,39 +40,34 @@ pip install --upgrade diffusers[torch]
 
 git clone https://huggingface.co/thang101020/musicai
 
-# 4. how to run?
+# 4. 실행
 
 python app.py
+```
 
-click in the link on terminal like "Running on local URL:  http://localhost:7860"
+## 실험 결과 (Experimental Results)
 
-write Tags / Prompt -> Lyrics -> edit Audio Duration (seconds) -> click Generate Music
-
-## 🎨 실험 결과 (Experimental Results)
-
-아래는 실제로 본 모델을 사용해 생성한 예시들입니다. (44.1kHz 스테레오, 10~60 step 내 생성)
 
 ### 1. 생성 예시 1 – 감성 발라드 (Emotional Ballad)
-
 **Prompt + Lyrics:**
-![Prompt + Lyrics Interface](Result_Image_Demo/pormt_lyric.png)
 
-**결과 (약 35초 길이, 60 steps):**
+<img src="Result_Image_Demo/pormt_lyric.png" width="500">
+
+**결과:**
 
 <audio controls>
-  <source src="Result_Image_Demo/output_20251205024257_0.wav" type="audio/wav">
-  Your browser does not support the audio element.
+<source src="Result_Image_Demo/output_20251205024257_0.wav" type="audio/wav">
 </audio>
 
-![result](Result_Image_Demo/result.png)
+<img src="Result_Image_Demo/result.png" width="600">
 
 ### 3. 추론 속도 비교 (동일 prompt, 30초 길이, RTX 4090 vs GTX 1065 6GB)
 
-| GPU              | VRAM   | Steps | 생성 시간    | 비고                  |
-|------------------|--------|-------|--------------|------------------------|
-| RTX 4090         | 24 GB  | 60    | **35초**    | 매우 빠름                  |
-| GTX 1065         | 4 GB   | 60    | ~3시간       | 느림                      |
-
+| GPU              | VRAM   | Steps | 생성 시간  | 비고                  |
+|------------------|--------|-------|----------|------------------------|
+| RTX 4090         | 24 GB  | 60    | 35초    | 매우 빠름                  |
+| GTX 1065         | 4 GB   | 60    | ~3시간   | 느림                      |
+## Test with RTX 4090 
 ![RTX 4090 Benchmark](Result_Image_Demo/test_RTX_4090_24GB.png)
-![GTX 1065 Benchmark](Result_Image_Demo/test_GTX_1065.png)
-
+## Test with GTX 1650 
+![GTX 1065 Benchmark](Result_Image_Demo/test_gtx_1065.png)
