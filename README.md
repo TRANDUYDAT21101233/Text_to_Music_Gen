@@ -47,6 +47,8 @@ python app.py
 
 ## 실험 결과 (Experimental Results)
 
+## Gradio Interface
+![Gradio](Result_Image_Demo/interface.png)
 
 ### 1. 생성 예시 1 – 감성 발라드 (Emotional Ballad)
 **Prompt + Lyrics:**
@@ -55,11 +57,9 @@ python app.py
 
 **결과:**
 
-<audio controls>
-<source src="Result_Image_Demo/output_20251205024257_0.wav" type="audio/wav">
-</audio>
-
 <img src="Result_Image_Demo/result.png" width="600">
+
+[output_20251205024257_0.wav](Result_Image_Demo/output_20251205024257_0.wav)
 
 ### 3. 추론 속도 비교 (동일 prompt, 30초 길이, RTX 4090 vs GTX 1065 6GB)
 
